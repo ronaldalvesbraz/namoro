@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hahahahaha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+<div class="Conteudo">
+<h1>Aceita namorar comigo?</h1>
+<button onclick="sim()" class="primeiro">SIM</button>
+<button onclick="desvia(this)"  onmouseover="desvia(this)"  class="segundo">NÃO</button>
+
+</div>
+</heade>
+</body>
+
+<script>
+
+  function sim(){
+alert("Você aceitou namorar comigo! :)");
+
+  }
+  function desvia(t){
+    var btn = t;
+    btn.style.position = 'absolut';
+    btn.style.bottom = geraPosicao(20, 90);
+    btn.style.left = geraPosicao(20, 90);
+    console.log("opa, desviei...");
+
+
+  }
+
+  randomNumber(0,100);
+
+  function geraPosicao(min, max) {
+    return (Math.random() * (max - min) + min) + "%";
+    
+  }
+
+
+
+</script>
+
+
+
+
+
+
+</html>
